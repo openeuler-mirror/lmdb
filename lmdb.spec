@@ -1,10 +1,11 @@
+%global commit_hash 6a1af27ff252f5a1b350fbb52b26275fee8ef605
 Name:           lmdb
-Version:        0.9.22
-Release:        4
+Version:        0.9.25
+Release:        1
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OpenLDAP
 URL:            http://symas.com/lmdb/
-Source0:        https://github.com/LMDB/lmdb/archive/LMDB_%{version}.tar.gz
+Source0:        https://git.openldap.org/openldap/openldap/-/archive/LMDB_%{version}.tar.gz
 Source1:        lmdb.pc.in
 
 BuildRequires:  gcc, make, doxygen, git
@@ -32,11 +33,12 @@ that use %{name}
 %package_help
 
 %prep
-%autosetup -n %{name}-LMDB_%{version} -p1 -Sgit
+%autosetup -n openldap-LMDB_%{version}-%{commit_hash} -p1 -Sgit
 
 %build
 pushd libraries/lib%{name}
-%make_build XCFLAGS="%{optflags}"
+%set_build_flags
+%make_build XCFLAGS="%{build_cflags}"
 
 doxygen
 rm -f Doxyfile || :
@@ -65,11 +67,7 @@ rm -rf testdb || :
 LD_LIBRARY_PATH=$PWD make test
 popd
 
-%post
-/sbin/ldconfig
-
-%postun
-/sbin/ldconfig
+%ldconfig_scriptlets libs
 
 %files
 %{_exec_prefix}/bin/*
@@ -91,6 +89,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Thu Jul 28 2020 xinghe<xinghe1@huawei.com> - 0.9.25-1
+- update version to 0.9.25
+
 * Fri Sep 20 2019 caomeng<caomeng5@huawei.com> - 0.9.22-4
 - Package init
 
