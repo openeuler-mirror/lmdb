@@ -1,6 +1,6 @@
-diff -up lmdb-LMDB_0.9.19/libraries/liblmdb/Makefile.orig lmdb-LMDB_0.9.19/libraries/liblmdb/Makefile
---- lmdb-LMDB_0.9.19/libraries/liblmdb/Makefile.orig	2017-01-04 12:14:24.303344915 +0100
-+++ lmdb-LMDB_0.9.19/libraries/liblmdb/Makefile	2017-01-04 12:19:20.190295319 +0100
+diff -up lmdb-LMDB_0.9.24/libraries/liblmdb/Makefile lmdb-LMDB_0.9.24/libraries/liblmdb/Makefile
+--- lmdb-LMDB_0.9.24/libraries/liblmdb/Makefile	2017-01-04 12:14:24.303344915 +0100
++++ lmdb-LMDB_0.9.24/libraries/liblmdb/Makefile	2017-01-04 12:19:20.190295319 +0100
 @@ -26,6 +26,7 @@ OPT = -O2 -g
  CFLAGS	= $(THREADS) $(OPT) $(W) $(XCFLAGS)
  LDLIBS	=
