@@ -1,7 +1,7 @@
-%global commit_hash 3c9aa9df8497ad977e0f91347f0626f5d53c9ab7
+%global commit_hash 8ad7be2510414b9506ec9f9e24f24d04d9b04a1a
 Name:           lmdb
-Version:        0.9.27
-Release:        2
+Version:        0.9.29
+Release:        1
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OpenLDAP
 URL:            http://symas.com/lmdb/
@@ -89,6 +89,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Thu Nov 25 2021 liudabo <liudabo1@huawei.com> - 0.9.29-1
+- upgrade version to 0.9.29
+
 * Fri Jul 30 2021 chenyanpanHW <chenyanpan@huawei.com> - 0.9.27-2
 - DESC: delete -Sgit from %autosetup, and delete BuildRequires git
 
