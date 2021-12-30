@@ -1,6 +1,6 @@
-%global commit_hash 3c9aa9df8497ad977e0f91347f0626f5d53c9ab7
+%global commit_hash 8ad7be2510414b9506ec9f9e24f24d04d9b04a1a
 Name:           lmdb
-Version:        0.9.27
+Version:        0.9.29
 Release:        1
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OpenLDAP
@@ -89,6 +89,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Sun Dec 26 2021 liudabo<liudabo1@huawei.com> - 0.9.29-1
+- upgrade version to 0.9.29
+
 * Tue Jan 26 2021 liudabo<liudabo1@huawei.com> - 0.9.27-1
 - upgrade version to 0.9.27
 
