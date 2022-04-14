@@ -1,9 +1,9 @@
 %global commit_hash 8ad7be2510414b9506ec9f9e24f24d04d9b04a1a
 Name:           lmdb
 Version:        0.9.29
-Release:        1
+Release:        2
 Summary:        An extraordinarily fast, memory-efficient database
-License:        OpenLDAP
+License:        OLDAP-2.8
 URL:            http://symas.com/lmdb/
 Source0:        https://git.openldap.org/openldap/openldap/-/archive/LMDB_%{version}.tar.gz
 Source1:        lmdb.pc.in
@@ -89,6 +89,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Thu Apr 14 2022 renhongxun <renhongxun@h-partners.com> - 0.9.29-2
+- update license from openLDAP to OLDAP-2.8
+
 * Thu Nov 25 2021 liudabo <liudabo1@huawei.com> - 0.9.29-1
 - upgrade version to 0.9.29
 
