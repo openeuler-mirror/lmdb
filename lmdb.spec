@@ -1,7 +1,7 @@
 %global commit_hash 8ad7be2510414b9506ec9f9e24f24d04d9b04a1a
 Name:           lmdb
 Version:        0.9.29
-Release:        2
+Release:        3
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OLDAP-2.8
 URL:            http://symas.com/lmdb/
@@ -89,6 +89,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Tue May 10 2022 mylee <liweiganga@uniontech.com> - 0.9.29-3
+- fix spec changelog date
+
 * Thu Apr 14 2022 renhongxun <renhongxun@h-partners.com> - 0.9.29-2
 - update license from openLDAP to OLDAP-2.8
 
@@ -98,12 +101,12 @@ popd
 * Fri Jul 30 2021 chenyanpanHW <chenyanpan@huawei.com> - 0.9.27-2
 - DESC: delete -Sgit from %autosetup, and delete BuildRequires git
 
-* Tue Jan 26 2021 liudabo<liudabo1@huawei.com> - 0.9.27-1
+* Tue Jan 26 2021 liudabo <liudabo1@huawei.com> - 0.9.27-1
 - upgrade version to 0.9.27
 
-* Thu Jul 28 2020 xinghe<xinghe1@huawei.com> - 0.9.25-1
+* Tue Jul 28 2020 xinghe <xinghe1@huawei.com> - 0.9.25-1
 - update version to 0.9.25
 
-* Fri Sep 20 2019 caomeng<caomeng5@huawei.com> - 0.9.22-4
+* Fri Sep 20 2019 caomeng <caomeng5@huawei.com> - 0.9.22-4
 - Package init
 
