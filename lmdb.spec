@@ -1,6 +1,6 @@
 Name:           lmdb
 Version:        0.9.24
-Release:        2
+Release:        3
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OLDAP-2.8
 URL:            http://symas.com/lmdb/
@@ -91,11 +91,14 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Tue May 10 2022 mylee <liweiganga@uniontech.com> - 0.9.24-3
+- fix spec changelog date
+
 * Thu Apr 14 2022 renhongxun <renhongxun@h-partners.com> - 0.9.24-2
 - update license from OpenLDAP to OLDAP-2.8
 
 * Tue Aug 04 2020 Leo Fang <leofang_94@163.com> - 0.9.24-1
 - Upgrade to version 0.9.24 and add yaml file for lmdb
 
-* Fri Sep 20 2019 caomeng<caomeng5@huawei.com> - 0.9.22-4
+* Fri Sep 20 2019 caomeng <caomeng5@huawei.com> - 0.9.22-4
 - Package init
