@@ -1,7 +1,7 @@
 %global commit_hash 6a1af27ff252f5a1b350fbb52b26275fee8ef605
 Name:           lmdb
 Version:        0.9.25
-Release:        1
+Release:        2
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OpenLDAP
 URL:            http://symas.com/lmdb/
@@ -89,9 +89,12 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
-* Thu Jul 28 2020 xinghe<xinghe1@huawei.com> - 0.9.25-1
+* Tue May 10 2022 mylee <liweiganga@uniontech.com> - 0.9.25-2
+- fix spec changelog date
+
+* Tue Jul 28 2020 xinghe <xinghe1@huawei.com> - 0.9.25-1
 - update version to 0.9.25
 
-* Fri Sep 20 2019 caomeng<caomeng5@huawei.com> - 0.9.22-4
+* Fri Sep 20 2019 caomeng <caomeng5@huawei.com> - 0.9.22-4
 - Package init
 
