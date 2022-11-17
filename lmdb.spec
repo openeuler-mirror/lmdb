@@ -1,7 +1,7 @@
-%global commit_hash 8ad7be2510414b9506ec9f9e24f24d04d9b04a1a
+%global commit_hash d87d682b6db9c04c1bee34e5cadbbcae4e6d9a67
 Name:           lmdb
-Version:        0.9.29
-Release:        3
+Version:        0.9.30
+Release:        1
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OLDAP-2.8
 URL:            http://symas.com/lmdb/
@@ -89,6 +89,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Fri Nov 04 2022 wangjiang <wangjiang37@h-partners.com> - 0.9.30-1
+- upgrade version to 0.9.30
+
 * Tue May 10 2022 mylee <liweiganga@uniontech.com> - 0.9.29-3
 - fix spec changelog date
 
