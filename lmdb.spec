@@ -1,6 +1,6 @@
 Name:           lmdb
 Version:        0.9.24
-Release:        3
+Release:        4
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OLDAP-2.8
 URL:            http://symas.com/lmdb/
@@ -13,7 +13,7 @@ Patch0:         lmdb-make.patch
 Patch1:         lmdb-s390-check.patch
 
 Provides:       %{name}-libs
-Obsoletes:      %{name}-libs
+Obsoletes:      %{name}-libs < %{version}-%{release}
 
 %description
 Symas LMDB is an extraordinarily fast, memory-efficient database
@@ -91,6 +91,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Fri Nov 25 2022 wangjiang <wangjiang37@h-partners.com> - 0.9.24-4
+- fix obsoletes in spec
+
 * Tue May 10 2022 <liweiganga@uniontech.com> - 0.9.24-3
 - fix spec changelog date
 
