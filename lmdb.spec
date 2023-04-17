@@ -1,7 +1,7 @@
 %global commit_hash d87d682b6db9c04c1bee34e5cadbbcae4e6d9a67
 Name:           lmdb
 Version:        0.9.30
-Release:        2
+Release:        3
 Summary:        An extraordinarily fast, memory-efficient database
 License:        OLDAP-2.8
 URL:            http://symas.com/lmdb/
@@ -12,6 +12,7 @@ BuildRequires:  gcc, make, doxygen,
 
 Patch0:         lmdb-make.patch
 Patch1:         lmdb-s390-check.patch
+Patch2:         support-specify-cc.patch
 
 Provides:       %{name}-libs
 Obsoletes:      %{name}-libs < %{version}-%{release}
@@ -89,6 +90,9 @@ popd
 %license libraries/lib%{name}/LICENSE
 
 %changelog
+* Mon Apr 17 2023 jammyjellyfish <jammyjellyfish255@outlook.com> - 0.9.30-3
+- Support specify CC
+
 * Fri Nov 25 2022 wangjiang <wangjiang37@h-partners.com> - 0.9.30-2
 - fix obsoletes in spec
 
